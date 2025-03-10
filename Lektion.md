@@ -1,0 +1,2 @@
+# Lektion 1
+Gjorde allt tills man började positionera via grid-lines och testa döpa några av grid-linesen men jag tyckte det var mer logiskt och lättare att inte använda namnen vilket fick mig att ta bort dem och lämna in den här varianten av uppgiften.
