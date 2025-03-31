@@ -1,0 +1,197 @@
+:root {
+    --gutter: 0.5rem;
+    --marginsize: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.GridContainer {
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1.3fr;
+
+    grid-template-areas: "ContainerEttBoxEtt ContainerEttBoxEtt" "ContainerEttBoxTva BoxTva" "BoxTre BoxFyra";
+    
+    justify-items: stretch;
+    align-items: stretch;
+    justify-self: center;
+    align-self: center;
+    height: 100vh;
+    max-width: 60rem;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ContainerEttBoxEtt {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    background-color: aqua;
+
+    grid-area: ContainerEttBoxEtt;
+
+    justify-items: center;
+    align-items: start;
+
+    margin-left: var(--marginsize);
+    margin-right: var(--marginsize);
+    margin-top: var(--gutter);
+
+    min-width: 40rem;
+}
+
+.Box1Speech1 {
+    background-color: white;
+    margin-right: 10rem;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 4px;
+    padding-top: 2px;
+}
+
+.Box1Speech2 {
+    background-color: white;
+    min-width: 15ch;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 4px;
+    padding-top: 2px;
+}
+
+.ContainerEttBoxTva {
+    display: grid;
+
+    background-color: aqua;
+
+    grid-area: ContainerEttBoxTva;
+
+    justify-items: end;
+    align-items: start;
+
+    margin-right: 0.5vw;
+    margin-bottom: var(--gutter);
+    margin-left: var(--marginsize);
+}
+
+.Box1Speech3 {
+    display: grid;
+    justify-items: end;
+    background-color: white;
+    margin-top: var(--gutter);
+    max-width: 14ch;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    padding-right: 8px;
+    padding-bottom: 6px;
+    padding-left: 4px;
+}
+
+.BoxTva {
+    display: grid;
+
+    grid-template-rows: 0.9fr 1fr;
+
+    background-color: bisque;
+
+    grid-area: BoxTva;
+
+    justify-items: start;
+
+    margin-top: 1rem;
+    margin-left: var(--gutter);
+    margin-bottom: var(--gutter);
+    margin-right: var(--marginsize);
+}
+
+.Box2Speech1 {
+    display: block;
+    background-color: white;
+    max-width: 13ch;
+    max-height: 8rem;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 4px;
+}
+
+.Box2Speech2 {
+    background-color: white;
+    max-width: 9ch;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 4px;
+}
+
+.BoxTre {
+    display: grid;
+
+    background-color: blue;
+
+    grid-area: BoxTre;
+
+    justify-items: center;
+    align-items: start;
+
+    margin-top: var(--gutter);
+    margin-right: var(--gutter);
+    margin-left: var(--marginsize);
+    margin-bottom: var(--gutter);
+}
+
+.Box3Speech1 {
+    background-color: white;
+    max-width: 14ch;
+    margin-left: 7rem;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.BoxFyra {
+    display: grid;
+
+    background-color: blueviolet;
+
+    grid-area: BoxFyra;
+
+    justify-items: start;
+    align-items: start;
+
+    margin-top: var(--gutter);
+    margin-left: var(--gutter);
+    margin-right: var(--marginsize);
+    margin-bottom: var(--gutter);
+}
+
+.Box4Speech1 {
+    background-color: white;
+    max-width: 23ch;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+p {
+    margin: 0;
+}
